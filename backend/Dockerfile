@@ -27,11 +27,7 @@ RUN rpm -ivh https://dl.iuscommunity.org/pub/ius/archive/CentOS/7/x86_64/php72u-
     && yum -y install php72u-common php72u-cli php72u-fpm php72u-json php72u-mbstring php72u-pdo php72u-pdo_mysql php72u-process php72u-xml \
     && php-fpm -v
 
-
-WORKDIR /var/www/html
-
 RUN curl -sS https://getcomposer.org/installer | php -- --filename=composer --install-dir=/usr/local/bin --version=1.7.3
-RUN composer update
 
 
 
