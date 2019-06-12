@@ -1,0 +1,30 @@
+version: '2'
+
+services:
+  backend:
+    build:
+      context: ./backend
+    expose:
+      - 80
+    image: "backend"
+    volumes:
+      - ./backend:/var/www/html
+
+  frontend:
+    build:
+      context: ./frontend
+    expose:
+      - 8080
+    image: "frontend"
+    volumes:
+      - ./frontend:/var/www/html
+
+  proxy-server:
+    build:
+      context: ./proxy-server
+    depends_on:
+      - backend
+      - frontend
+    image: "proxy-server"
+    ports:
+      - 80:80
