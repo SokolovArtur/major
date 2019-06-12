@@ -764,17 +764,17 @@
     },
     {
         "name": "laravel/framework",
-        "version": "v5.8.21",
-        "version_normalized": "5.8.21.0",
+        "version": "v5.8.22",
+        "version_normalized": "5.8.22.0",
         "source": {
             "type": "git",
             "url": "https://github.com/laravel/framework.git",
-            "reference": "c78796cc1159c8dc63c45a2011ddc4af17059cb4"
+            "reference": "f47d1a0fe7fd9b98d86ed2d404823dfeb4938de3"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/laravel/framework/zipball/c78796cc1159c8dc63c45a2011ddc4af17059cb4",
-            "reference": "c78796cc1159c8dc63c45a2011ddc4af17059cb4",
+            "url": "https://api.github.com/repos/laravel/framework/zipball/f47d1a0fe7fd9b98d86ed2d404823dfeb4938de3",
+            "reference": "f47d1a0fe7fd9b98d86ed2d404823dfeb4938de3",
             "shasum": ""
         },
         "require": {
@@ -877,7 +877,7 @@
             "symfony/psr-http-message-bridge": "Required to use PSR-7 bridging features (^1.1).",
             "wildbit/swiftmailer-postmark": "Required to use Postmark mail driver (^3.0)."
         },
-        "time": "2019-06-05T00:13:05+00:00",
+        "time": "2019-06-12T12:54:34+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -4683,6 +4683,99 @@
         ],
         "description": "CssToInlineStyles is a class that enables you to convert HTML-pages/files into HTML-pages/files with inline styles. This is very useful when you're sending emails.",
         "homepage": "https://github.com/tijsverkoyen/CssToInlineStyles"
+    },
+    {
+        "name": "tochka-developers/jsonrpc",
+        "version": "v2.1.6",
+        "version_normalized": "2.1.6.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/tochka-developers/jsonrpc.git",
+            "reference": "f6e67a602b9985ef1e90d07779f12ed4ded1a514"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/tochka-developers/jsonrpc/zipball/f6e67a602b9985ef1e90d07779f12ed4ded1a514",
+            "reference": "f6e67a602b9985ef1e90d07779f12ed4ded1a514",
+            "shasum": ""
+        },
+        "require": {
+            "ext-json": "*",
+            "laravel/framework": "~5.6",
+            "php": ">=7.1.0",
+            "phpdocumentor/reflection-docblock": "~4.3",
+            "tochka-developers/jsonrpc-smd": "^1.0"
+        },
+        "require-dev": {
+            "roave/security-advisories": "dev-master"
+        },
+        "time": "2019-01-23T05:20:09+00:00",
+        "type": "library",
+        "extra": {
+            "laravel": {
+                "providers": [
+                    "Tochka\\JsonRpc\\JsonRpcServiceProvider"
+                ]
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Tochka\\JsonRpc\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Pavel Babushkin",
+                "email": "darkdarin@tochka.com"
+            }
+        ],
+        "description": "JsonRpc extension for Laravel"
+    },
+    {
+        "name": "tochka-developers/jsonrpc-smd",
+        "version": "v1.0.3",
+        "version_normalized": "1.0.3.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/tochka-developers/jsonrpc-smd.git",
+            "reference": "211dec3e1f3b9ff5d818633f9ddbbb2817bf0bc5"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/tochka-developers/jsonrpc-smd/zipball/211dec3e1f3b9ff5d818633f9ddbbb2817bf0bc5",
+            "reference": "211dec3e1f3b9ff5d818633f9ddbbb2817bf0bc5",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=7.1"
+        },
+        "require-dev": {
+            "roave/security-advisories": "dev-master"
+        },
+        "time": "2019-01-23T05:21:03+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Tochka\\JsonRpcSmd\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Pavel Babushkin",
+                "email": "darkdarin@tochka.com"
+            }
+        ],
+        "description": "JsonRpc SMD description"
     },
     {
         "name": "vlucas/phpdotenv",
