@@ -12,6 +12,4 @@ RUN npm config set unsafe-perm=true \
 
 
 WORKDIR /var/www/html
-
-RUN npm install
 CMD npm run serve
